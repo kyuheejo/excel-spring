@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>엑셀 업로드</title>
+</head>
+
+<body>
+<form th:action="@{/import}" method="POST" enctype="multipart/form-data">
+    <input type="file" th:name="file" />
+    <button th:type="submit" class="btn btn-primary">Upload File</button>
+</form>
+</body>
+
+</html>
